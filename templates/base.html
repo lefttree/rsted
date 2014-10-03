@@ -18,8 +18,7 @@
 
         {% endblock %}
     </head>
-    <body>
-        <a id="github-ribbon" href="http://github.com/anru/rsted">Fork me on GitHub</a>
+    <body onload=load()>
         {% block body_head %}
         {% endblock %}
         <header id="header">
@@ -29,7 +28,7 @@
                 <ul class="menu" id="menu">
                     <li class="{{ is_active('index') }}"><a href="{{ url_for('index') }}">Editor</a>
                     </li>
-                    <li class="{{ is_active('about') }}"><a href="{{ url_for('about') }}">About</a></li>
+                    <!--<li class="{{ is_active('about') }}"><a href="{{ url_for('about') }}">About</a></li>-->
                 </ul>
                 {% endblock -%}
             </menu>
@@ -48,7 +47,7 @@
 
         <footer id="footer">
             <span class="left"><a target="_blank" href="http://docutils.sourceforge.net/docs/user/rst/quickref.html">Quick reStructuredText reference</a></span>
-            <span class="right">Copyright © rst.ninjs.org, 2011</span>
+            <span class="right">Copyright © Silvus Technologies, 2014</span>
         </footer>
 
     </body>
